@@ -37,6 +37,7 @@ function App() {
       <div>
        <div className='Card'>
           <b>{WebApp.platform}</b>
+          <br/>
           <b>Our contract address</b>
           <div className='Hint'>{contract_address?.slice(0,30) + "..."}</div>
           <b>Our contract balance</b>
@@ -57,6 +58,7 @@ function App() {
             Show Alert
         </a>
 
+        <br/>
         {connected && (
           <a onClick={() => {
             sendIncrement()
@@ -77,7 +79,7 @@ function App() {
           </a>
         )}
 
-<br/>
+        <br/>
         {connected && (
           <a onClick={() => {
             sendWithdrawalRequest()
